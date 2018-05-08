@@ -210,6 +210,7 @@
           {
             return;
           }
+		  newData.forEach(function(contact){ contact.FullName=jQuery('<div />').text(contact.FullName).html()});
          
           this.setItemId(newData, oldData.length);
           var data = oldData.concat(newData);
